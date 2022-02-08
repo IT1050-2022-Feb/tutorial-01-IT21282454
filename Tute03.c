@@ -8,11 +8,23 @@ e.g.
 n -> 100
 sum = 1+2+3+....+ 99+100 = 5050
 
-n -> 1-
+n -> 10
 sum = 1+2+3+...+10 = 55 */
 
 #include <stdio.h>
-int main() {
+int main() 
+{ 
+  int i, number, sum = 0;
+
+  printf("Input Number : ");
+  scanf("%d", &number);
+
+  for (i = number; i > 0; i--)
+  {
+      sum = sum + i;
+  }
+
+  printf("Sum = %d", sum);
   
   return 0;
 }
